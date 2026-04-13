@@ -3,6 +3,12 @@ body{
     font-family:'Courier New', Courier, monospace;
     font-size: 14pt;
 }
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
 #logo{
     height: 50px;
 }
