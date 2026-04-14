@@ -45,3 +45,5 @@ body {
 .site-footer {
     margin-top: auto; /* Pushes the footer to the bottom of the flex container */
 }
+
+li { list-style-type: disc; }
