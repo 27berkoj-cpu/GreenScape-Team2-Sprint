@@ -9,6 +9,12 @@ main {
     text-align: center;
     padding: 20px;
 }
+.intro-image {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 20px auto 0;
+}
 #logo{
     height: 50px;
 }
