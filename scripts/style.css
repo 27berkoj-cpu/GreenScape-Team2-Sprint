@@ -46,12 +46,9 @@ body {
     margin-top: auto; /* Pushes the footer to the bottom of the flex container */
 }
 
-
 li { list-style-type: disc; }
 
-
 li { list-style-type: disc; }
-
 
 .info-boxes {
     max-width: 1100px;
@@ -195,4 +192,3 @@ li { list-style-type: disc; }
         box-shadow: 10px 10px 0px #2e7d32;
     }
 }
-
