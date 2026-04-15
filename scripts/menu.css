@@ -124,7 +124,7 @@
         max-height: 0; /* Initially hidden */
         overflow: hidden;
         transition: max-height 0.3s ease-out;
-        background-color: #333; 
+        background-color: #000000; 
         text-align: center;
         /* Position links below the brand/hamburger by setting width to 100% */
         order: 1; /* Force nav-links to the second row in the flex container */
