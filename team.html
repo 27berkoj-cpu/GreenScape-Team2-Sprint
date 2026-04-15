@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Team - GreenScape Solutions</title>
     <link rel="stylesheet" href="scripts/menu.css">
     <link rel="stylesheet" href="scripts/style.css">
+    <style>
+        .team-hero {
+            background-color: #104249;
+            color: white;
+            text-align: center;
+            padding: 40px 20px 30px;
+        }
+
+        .team-hero h1 {
+            font-size: 2em;
+            margin: 0 0 8px;
+            color: white;
+        }
+
+        .team-hero p {
+            font-size: 1em;
+            color: #b5d8cf;
+            margin: 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .team-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .team-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .team-card-body {
+            padding: 16px 18px 20px;
+        }
+
+        .team-card-body h2 {
+            font-size: 1.1em;
+            margin: 0 0 4px;
+            color: #104249;
+        }
+
+        .team-card-body .role {
+            font-size: 0.8em;
+            color: #0F6E56;
+            font-weight: bold;
+            margin: 0 0 14px;
+        }
+
+        .team-card-body hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 0 0 12px;
+        }
+
+        .contact-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 8px;
+            font-size: 0.8em;
+        }
+
+        .contact-label {
+            color: #888;
+            width: 44px;
+            flex-shrink: 0;
+        }
+
+        .contact-value {
+            color: #222;
+        }
+
+        .contact-value a {
+            color: #185FA5;
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header class="navbar-container">
@@ -34,17 +127,93 @@
             </ul>
         </nav>
     </header>
-    <main>
+
+    <div class="team-hero">
         <h1>Our Team</h1>
         <p>Meet the professionals behind GreenScape Solutions' landscaping work.</p>
-    </main>
-    
-    <script src="scripts/script.js"></script>
-    
-   <footer class="site-footer">
-    <p><img src="img/GreenScape Solutions Logo.png" alt="GreenScape Solutions Logo" style="width:50px; height:auto; vertical-align:middle; margin-right:10px;">GreenScape Solutions | FaceBook Link: <a href="https://facebook.dacc-appdev.com/ " style="color:rgb(0, 26, 255);"> Our FaceBook</a>| +1(740)867-5309 | info@greenscape.com</p>
-    <p>&copy; 2024 GreenScape Solutions. All rights reserved.</p>
+    </div>
 
+    <div class="team-grid">
+
+        <!-- TEAM MEMBER 1 — replace with real info -->
+        <div class="team-card">
+            <img src="img/team-john.jpg" alt="John Doe">
+            <div class="team-card-body">
+                <h2>Joshua Berko</h2>
+                <p class="role">Owner &amp; Lead Landscaper</p>
+                <hr>
+                <div class="contact-row">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">(740) 555-0101</span>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value"><a href="mailto:john@greenscape.com">john@greenscape.com</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEAM MEMBER 2 — replace with real info -->
+        <div class="team-card">
+            <img src="img/team-jane.jpg" alt="Jane Smith">
+            <div class="team-card-body">
+                <h2>Thomas neito</h2>
+                <p class="role">Operations Manager</p>
+                <hr>
+                <div class="contact-row">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">(740) 555-0102</span>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value"><a href="mailto:jane@greenscape.com">jane@greenscape.com</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEAM MEMBER 3 — replace with real info -->
+        <div class="team-card">
+            <img src="img/team-mike.jpg" alt="Mike Johnson">
+            <div class="team-card-body">
+                <h2>Imann Kamara</h2>
+                <p class="role">Lawn Care Specialist</p>
+                <hr>
+                <div class="contact-row">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">(740) 555-0103</span>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value"><a href="mailto:mike@greenscape.com">mike@greenscape.com</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEAM MEMBER 4 — replace with real info -->
+        <div class="team-card">
+            <img src="img/team-sara.jpg" alt="Sara Wilson">
+            <div class="team-card-body">
+                <h2>Sara Wilson</h2>
+                <p class="role">Treatment Technician</p>
+                <hr>
+                <div class="contact-row">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">(740) 555-0104</span>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value"><a href="mailto:sara@greenscape.com">sara@greenscape.com</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="site-footer">
+        <p><img src="img/GreenScape Solutions Logo.png" alt="GreenScape Solutions Logo" style="width:50px; height:auto; vertical-align:middle; margin-right:10px;">GreenScape Solutions | FaceBook Link: <a href="https://facebook.dacc-appdev.com/" style="color:rgb(0, 26, 255);">Our FaceBook</a> | +1(740)867-5309 | info@greenscape.com</p>
+        <p>&copy; 2024 GreenScape Solutions. All rights reserved.</p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
