@@ -46,4 +46,80 @@ body {
     margin-top: auto; /* Pushes the footer to the bottom of the flex container */
 }
 
+<<<<<<< HEAD
 li { list-style-type: disc; }
+=======
+
+li { list-style-type: disc; }
+
+
+/* For team.html */
+.team-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* Spacing between rows */
+    padding: 0 20px;
+}
+
+.team-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #fff;
+}
+
+/* This targets the 2nd, 4th, 6th, etc. cards and flips them! */
+.team-card:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.team-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.team-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #2e7d32; /* Adds a nice green accent shadow */
+}
+
+/* Adjust the shadow for the flipped cards */
+.team-card:nth-child(even) .team-image img {
+    box-shadow: -10px 10px 0px #2e7d32;
+}
+
+.team-info {
+    flex: 1;
+}
+
+.team-info h2 {
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #666;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Responsive: Stack them vertically on mobile */
+@media (max-width: 768px) {
+    .team-card, .team-card:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .team-card:nth-child(even) .team-image img {
+        box-shadow: 10px 10px 0px #2e7d32;
+    }
+}
+>>>>>>> 7dab25c96e5985e0d96ecd2f51ecbeecb92c3f15
