@@ -46,12 +46,85 @@ body {
     margin-top: auto; /* Pushes the footer to the bottom of the flex container */
 }
 
-<<<<<<< HEAD
-li { list-style-type: disc; }
-=======
 
 li { list-style-type: disc; }
 
+
+li { list-style-type: disc; }
+
+
+.info-boxes {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.info-boxes h2 {
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-boxes p {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+    color: #222;
+}
+
+.info-box-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.info-box {
+    background: #fff;
+    border: 1px solid #dae6d1;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transform-origin: center;
+}
+
+.info-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.info-box h3 {
+    color: #1f5030;
+    margin-bottom: 12px;
+}
+
+.info-box p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.info-box ul {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+.info-box .sub-list {
+    font-size: 0.92rem;
+    margin-top: 6px;
+    padding-left: 18px;
+}
+
+.info-box .sub-list li {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+    .info-box-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* For team.html */
 .team-container {
@@ -122,4 +195,4 @@ li { list-style-type: disc; }
         box-shadow: 10px 10px 0px #2e7d32;
     }
 }
->>>>>>> 7dab25c96e5985e0d96ecd2f51ecbeecb92c3f15
+
