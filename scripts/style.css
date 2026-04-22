@@ -113,7 +113,7 @@ body {
     margin-bottom: 4px;
 }
 .intro-image-container {
-    display: block;
+    display: flex;
     max-width: 90%;
     width: 1100px;
     height: 450px;
