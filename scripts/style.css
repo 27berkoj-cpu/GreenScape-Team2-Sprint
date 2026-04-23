@@ -1,5 +1,5 @@
 body{
-    background-color: #CCCCCC;
+    background-color: #FFFFFF;
     font-family:'Courier New', Courier, monospace;
     font-size: 14pt;
 }
@@ -16,7 +16,7 @@ main {
     margin: 20px auto 0;
 }
 #logo{
-    height: 60px;
+    height: 130px;
 }
 .site-footer {
     background-color: #DEE9C9; /* Dark background to contrast the grey body */
@@ -46,6 +46,7 @@ body {
     margin-top: auto; /* Pushes the footer to the bottom of the flex container */
 }
 
+<<<<<<< HEAD
 .info-boxes {
     max-width: 1100px;
     margin: 40px auto;
@@ -75,7 +76,7 @@ body {
 
 .info-box {
     background: #fff;
-    border: 1px solid #dae6d1;
+    border: 2px solid #1f5030;
     border-radius: 18px;
     padding: 22px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -111,6 +112,19 @@ body {
 
 .info-box .sub-list li {
     margin-bottom: 4px;
+}
+.intro-image-container {
+    display: block;
+    max-width: 90%;
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+
+    border: 8px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    object-fit: cover;
 }
 
 @media (max-width: 900px) {
@@ -462,3 +476,6 @@ body {
         flex: 0 0 100%;
     }
 }
+=======
+li { list-style-type: disc; }
+>>>>>>> 14d37d40fabde789e4a498fa1bf7a804b0bf4639
