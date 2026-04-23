@@ -1,5 +1,5 @@
 body{
-    background-color: #CCCCCC;
+    background-color: #FFFFFF;
     font-family:'Courier New', Courier, monospace;
     font-size: 14pt;
 }
@@ -86,7 +86,7 @@ body {
 
 .info-box {
     background: #fff;
-    border: 1px solid #dae6d1;
+    border: 2px solid #1f5030;
     border-radius: 18px;
     padding: 22px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
