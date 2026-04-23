@@ -46,7 +46,6 @@ body {
     margin-top: auto; /* Pushes the footer to the bottom of the flex container */
 }
 
-<<<<<<< HEAD
 .info-boxes {
     max-width: 1100px;
     margin: 40px auto;
@@ -476,6 +475,3 @@ body {
         flex: 0 0 100%;
     }
 }
-=======
-li { list-style-type: disc; }
->>>>>>> 14d37d40fabde789e4a498fa1bf7a804b0bf4639
