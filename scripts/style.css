@@ -16,7 +16,7 @@ main {
     margin: 20px auto 0;
 }
 #logo{
-    height: 60px;
+    height: 130px;
 }
 .site-footer {
     background-color: #DEE9C9; /* Dark background to contrast the grey body */
@@ -30,17 +30,6 @@ main {
 
 .site-footer p {
     margin: 5px 0;
-}
-
-.footer-logo {
-    width: 50px;
-    height: auto;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.footer-link {
-    color: rgb(0, 26, 255);
 }
 html, body {
     height: 100%;
@@ -57,6 +46,7 @@ body {
     margin-top: auto; /* Pushes the footer to the bottom of the flex container */
 }
 
+<<<<<<< HEAD
 .info-boxes {
     max-width: 1100px;
     margin: 40px auto;
@@ -486,3 +476,6 @@ body {
         flex: 0 0 100%;
     }
 }
+=======
+li { list-style-type: disc; }
+>>>>>>> 14d37d40fabde789e4a498fa1bf7a804b0bf4639
