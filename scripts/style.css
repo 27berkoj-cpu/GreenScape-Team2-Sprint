@@ -1,30 +1,82 @@
+/* ============================================
+   BASE STYLES - Overall page appearance
+   ============================================ */
 body{
     background-color: #FFFFFF;
     font-family:'Courier New', Courier, monospace;
     font-size: 14pt;
 }
+
+/* Main content container - centers content and limits width */
 main {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
 }
+
+/* Intro image display settings */
 .intro-image {
     display: block;
     width: 200px;
     height: auto;
     margin: 20px auto 0;
 }
-#logo{
-    height: 130px;
+
+/* Navigation bar logo sizing */
+#logo{ 
+    height: 70px;
+}
+<<<<<<< HEAD
+
+=======
+
+/* ============================================
+   FOOTER STYLES - Site footer appearance
+   ============================================ */
+.site-footer {
+    background-color: #DEE9C9;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 12pt;
+    clear: both;
 }
 
+/* Footer paragraph spacing */
+.site-footer p {
+    margin: 5px 0;
+}
 
+/* Footer logo sizing and alignment */
+.footer-logo {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* ============================================
+   LAYOUT - Flexbox page structure
+   ============================================ */
+/* Makes body and html fill viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+>>>>>>> 3e0b4bdd3ae66ed65b5b7867fa5f430e56188839
+
+/* Ensures body takes minimum full viewport height */
 body {
     min-height: 100vh;
 }
 
+/* Pushes footer to bottom of flex container */
 .site-footer {
+<<<<<<< HEAD
   background-color: #2d3436; /* Dark professional grey */
   color: #ffffff;
   padding: 40px 20px;
@@ -71,8 +123,14 @@ body {
   margin-top: 30px;
   font-size: 0.8rem;
   opacity: 0.7;
+=======
+    margin-top: auto;
+>>>>>>> 3e0b4bdd3ae66ed65b5b7867fa5f430e56188839
 }
 
+/* ============================================
+   INFO BOXES - Service/feature card grid
+   ============================================ */
 .info-boxes {
     max-width: 1100px;
     margin: 40px auto;
@@ -80,6 +138,7 @@ body {
     text-align: left;
 }
 
+/* Info boxes section heading */
 .info-boxes h2 {
     color: #2e7d32;
     font-size: 2rem;
@@ -87,6 +146,7 @@ body {
     text-align: center;
 }
 
+/* Info boxes paragraph text */
 .info-boxes p {
     max-width: 850px;
     margin: 0 auto 25px;
@@ -94,12 +154,14 @@ body {
     color: #222;
 }
 
+/* Grid layout for info boxes - 4 columns on desktop */
 .info-box-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(220px, 1fr));
     gap: 20px;
 }
 
+/* Individual info box card styling */
 .info-box {
     background: #fff;
     border: 2px solid #1f5030;
@@ -110,56 +172,81 @@ body {
     transform-origin: center;
 }
 
+/* Hover effect for info boxes - scale up */
 .info-box:hover {
     transform: scale(1.03);
     box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
 }
 
+/* Info box heading style */
 .info-box h3 {
     color: #1f5030;
     margin-bottom: 12px;
 }
 
+/* Info box paragraph style */
 .info-box p {
     line-height: 1.6;
     color: #333;
 }
 
+/* Info box unordered list padding */
 .info-box ul {
     padding-left: 18px;
     margin-top: 10px;
 }
 
+/* Nested sub-list styling */
 .info-box .sub-list {
     font-size: 0.92rem;
     margin-top: 6px;
     padding-left: 18px;
 }
 
+/* Sub-list item spacing */
 .info-box .sub-list li {
     margin-bottom: 4px;
 }
+
+/* ============================================
+   HERO IMAGE - Main banner image
+   ============================================ */
 .intro-image-container {
     display: block;
-    max-width: 90%;
-    width: 1100px;
+    width: 95%;
+    max-width: 1100px;
     height: 500px;
     margin: 0 auto;
-
-    border: 8px solid #ffffff;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-
+    box-shadow: none;
     object-fit: cover;
 }
 
+.intro-text-container {
+    padding: 5px;
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.intro-text-container h1 {
+    text-align: center;
+}
+
+/* Responsive: Single column on mobile */
 @media (max-width: 900px) {
     .info-box-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* For team.html */
+/* ============================================
+   TEAM PAGE - Team member cards
+   ============================================ */
+/* Keyframe animation for fade in up effect */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -171,6 +258,7 @@ body {
     }
 }
 
+/* Keyframe animation for image zoom on hover */
 @keyframes imageZoom {
     from {
         transform: scale(1);
@@ -180,6 +268,7 @@ body {
     }
 }
 
+/* Team cards container - responsive grid */
 .team-container {
     max-width: 1200px;
     margin: 50px auto;
@@ -189,6 +278,7 @@ body {
     padding: 0 20px;
 }
 
+/* Individual team card styling */
 .team-card {
     display: flex;
     flex-direction: column;
@@ -200,17 +290,20 @@ body {
     animation: fadeInUp 0.6s ease-out backwards;
 }
 
+/* Staggered animation delays for each card */
 .team-card:nth-child(1) { animation-delay: 0.1s; }
 .team-card:nth-child(2) { animation-delay: 0.2s; }
 .team-card:nth-child(3) { animation-delay: 0.3s; }
 .team-card:nth-child(4) { animation-delay: 0.4s; }
 
+/* Hover effect for team cards */
 .team-card:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 12px 24px rgba(46, 125, 50, 0.25);
     background-color: #f9fdf7;
 }
 
+/* Team member image container */
 .team-image {
     width: 100%;
     height: 280px;
@@ -218,6 +311,7 @@ body {
     position: relative;
 }
 
+/* Team member image styling */
 .team-image img {
     width: 100%;
     height: 100%;
@@ -226,16 +320,19 @@ body {
     transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
+/* Zoom effect on team card hover */
 .team-card:hover .team-image img {
     transform: scale(1.12);
 }
 
+/* Team info section styling */
 .team-info {
     padding: 20px;
     opacity: 0;
     animation: fadeInUp 0.6s ease-out 0.2s forwards;
 }
 
+/* Team member name heading */
 .team-info h2 {
     color: #2e7d32;
     font-size: 1.5rem;
@@ -243,10 +340,12 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Change name color on card hover */
 .team-card:hover .team-info h2 {
     color: #0F6E56;
 }
 
+/* Job title styling */
 .job-title {
     font-weight: bold;
     color: #666;
@@ -256,10 +355,12 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Change job title color on hover */
 .team-card:hover .job-title {
     color: #2e7d32;
 }
 
+/* Team member description paragraph */
 .team-info p {
     font-size: 0.85rem;
     line-height: 1.5;
@@ -275,7 +376,10 @@ body {
     }
 }
 
-/* Service Pages Styling */
+/* ============================================
+   SERVICE PAGES - Individual service page styles
+   ============================================ */
+/* Service page header banner */
 .service-header {
     background: linear-gradient(135deg, #104249 0%, #0F6E56 100%);
     color: white;
@@ -284,24 +388,28 @@ body {
     margin-bottom: 50px;
 }
 
+/* Service page main heading */
 .service-header h1 {
     font-size: 2.5rem;
     margin: 0 0 15px 0;
     font-weight: bold;
 }
 
+/* Service header subtitle text */
 .service-header p {
     font-size: 1.1rem;
     margin: 0;
     color: #b5d8cf;
 }
 
+/* Service content wrapper container */
 .service-content-wrapper {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px 50px;
 }
 
+/* Individual service section block */
 .service-section {
     margin-bottom: 40px;
     padding: 35px;
@@ -310,18 +418,21 @@ body {
     border-left: 5px solid #2e7d32;
 }
 
+/* Service section heading */
 .service-section h2 {
     color: #2e7d32;
     font-size: 1.8rem;
     margin: 0 0 20px 0;
 }
 
+/* Service section subheading */
 .service-section h3 {
     color: #0F6E56;
     font-size: 1.3rem;
     margin: 20px 0 12px 0;
 }
 
+/* Service section paragraph text */
 .service-section p {
     font-size: 0.95rem;
     line-height: 1.7;
@@ -329,11 +440,13 @@ body {
     margin-bottom: 15px;
 }
 
+/* Service section list styling */
 .service-section ul, .service-section ol {
     padding-left: 25px;
     margin-bottom: 15px;
 }
 
+/* Service section list items */
 .service-section li {
     margin-bottom: 12px;
     color: #333;
@@ -341,6 +454,7 @@ body {
     list-style-type: disc;
 }
 
+/* Service intro block - image + text layout */
 .service-intro-block {
     display: flex;
     align-items: center;
@@ -349,11 +463,13 @@ body {
     flex-wrap: wrap;
 }
 
+/* Service intro image container */
 .service-intro-image {
     flex: 1;
     min-width: 250px;
 }
 
+/* Service intro image styling */
 .service-intro-image img {
     width: 100%;
     max-width: 350px;
@@ -362,17 +478,20 @@ body {
     box-shadow: 0 8px 20px rgba(46, 125, 50, 0.15);
 }
 
+/* Service intro text container */
 .service-intro-text {
     flex: 1;
     min-width: 250px;
 }
 
+/* Service intro text heading */
 .service-intro-text h2 {
     color: #2e7d32;
     font-size: 1.8rem;
     margin: 0 0 15px 0;
 }
 
+/* Service intro text paragraph */
 .service-intro-text p {
     font-size: 0.95rem;
     line-height: 1.7;
@@ -380,6 +499,7 @@ body {
     margin-bottom: 12px;
 }
 
+/* Responsive: Tablet and mobile adjustments */
 @media (max-width: 768px) {
     .service-header h1 {
         font-size: 1.8rem;
@@ -395,7 +515,10 @@ body {
     }
 }
 
-/* Service Pages Styling */
+/* ============================================
+   ALTERNATE SERVICE PAGE STYLES - Variant service layout
+   ============================================ */
+/* Alternate service header styling */
 .service-header {
     background: linear-gradient(135deg, #104249 0%, #0F6E56 100%);
     color: white;
@@ -404,24 +527,28 @@ body {
     margin-bottom: 40px;
 }
 
+/* Alternate service heading size */
 .service-header h1 {
     font-size: 2.2rem;
     margin: 0 0 10px 0;
     font-weight: bold;
 }
 
+/* Alternate service header subtitle */
 .service-header p {
     font-size: 1rem;
     margin: 0;
     color: #b5d8cf;
 }
 
+/* Service main content container */
 .service-main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px 40px 20px;
 }
 
+/* Individual service item block */
 .service-item {
     margin-bottom: 50px;
     padding: 30px;
@@ -430,18 +557,21 @@ body {
     border-left: 5px solid #2e7d32;
 }
 
+/* Service item heading */
 .service-item h2 {
     color: #2e7d32;
     font-size: 1.8rem;
     margin: 0 0 20px 0;
 }
 
+/* Service item subheading */
 .service-item h3 {
     color: #0F6E56;
     font-size: 1.2rem;
     margin: 20px 0 10px 0;
 }
 
+/* Service item paragraph text */
 .service-item p {
     font-size: 0.95rem;
     line-height: 1.6;
@@ -449,17 +579,20 @@ body {
     margin: 0 0 15px 0;
 }
 
+/* Service item list styling */
 .service-item ul, .service-item ol {
     margin: 15px 0;
     padding-left: 25px;
 }
 
+/* Service item list items */
 .service-item li {
     margin-bottom: 10px;
     color: #333;
     line-height: 1.6;
 }
 
+/* Service intro layout - side by side image and text */
 .service-intro {
     display: flex;
     align-items: flex-start;
@@ -468,10 +601,12 @@ body {
     flex-wrap: wrap;
 }
 
+/* Service intro image container */
 .service-intro-img {
     flex: 0 0 280px;
 }
 
+/* Service intro image styling */
 .service-intro-img img {
     width: 100%;
     height: auto;
@@ -479,11 +614,13 @@ body {
     box-shadow: 0 8px 20px rgba(46, 125, 50, 0.2);
 }
 
+/* Service intro text container (alternate) */
 .service-intro-text {
     flex: 1;
     min-width: 300px;
 }
 
+/* Responsive: Mobile adjustments for alternate service layout */
 @media (max-width: 768px) {
     .service-header h1 {
         font-size: 1.6rem;
