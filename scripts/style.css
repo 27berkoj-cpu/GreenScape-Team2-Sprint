@@ -62,7 +62,7 @@ body {
 
 /* Pushes footer to bottom of flex container */
 .site-footer {
-  background-color: #2d3436; /* Dark professional grey */
+  background-color: #1f5030; /* Dark green to match the site's green theme */
   color: #ffffff;
   padding: 40px 20px;
   font-family: sans-serif;
@@ -145,10 +145,10 @@ body {
 
 /* Individual info box card styling */
 .info-box {
-    background: #fff;
+    background: #f0f8f0; /* Light green background to match the theme */
     border: 2px solid #1f5030;
     border-radius: 18px;
-    padding: 22px;
+    padding: 30px; /* Increased padding for taller boxes */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     transform-origin: center;
